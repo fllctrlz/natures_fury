@@ -1,0 +1,92 @@
+<html>
+
+
+<!-- Mirrored from home.ican.net/~686280/Programming.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 May 2019 00:52:08 GMT -->
+<head>
+<title> Ctrl-Z Programming</title>
+<link href="Ctrl-Z%20Website%20Styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="toppictures">
+<img src="Pictures%20for%20Website%20Alex%20Mark/Bar%20of%20Pictures%20on%20top.jpg" height="30%">
+</div>
+
+<div id="rightpictures3">
+<img src="Pictures%20for%20Website%20Alex%20Mark/Bar%20of%20Pictures%20on%20right.jpg" height="107%">
+</div>
+
+<div id="menu3">
+<a href="index.html" target="_self">Home Page </a>
+</br>
+</br>
+<a href="Team%20Profile.html" target="_self">Team Profile </a>
+</br>
+</br>
+<a href="Our%20Robot.html" target="_self">Our Robot </a>
+<ul>
+<ul>
+<li> <a href="Our%20Robot%20Design.html" target="_self">Our Robot Design </a> </li>
+</br>
+<li> <a href="Programming.html" target="_self">Programming </a> </li>
+</ul>
+</ul>
+<a href="Our%20Research%20Project.html" target="_self">Our Research Project </a>
+</br>
+</br>
+<a href="Coaches%20and%20Mentors.html" target="_self">Coaches and Mentors </a>
+</br>
+</br>
+<a href="Our%20Experts.html" target="_self">Our Experts </a>
+</br>
+</br>
+<a href="Sharing.html" target="_self">Sharing </a>
+</br>
+</br>
+<a href="Contact%20Us.html" target="_self">Contact Us </a>
+</div>
+
+<h1> Programming </h1>
+
+<ul class="listtraits">
+<li class="listtraits"> We use math blocks, variables, logic, compares, loops switches, and MyBlocks with data hubs (so we could reuse code but change parameters)  </li>
+<li class="listtraits"> We have created a selection program which allows us to quickly and efficiently choose missions (or even re-run missions quickly) during matches.  Audible sounds and meaningful NXT screen messages allow the user to select programs with ease </li>
+<li class="listtraits">By using gear lash removal before each movement, the ramp up feature when starting from stationary position, and our own error-corrected move block, we are able to achieve more consistent and repeatable robot movement</li>
+<li class="listtraits"> We regularly use subroutines (i.e. MyBlocks) to reuse code whenever possible and to keep our program sizes manageable.  See diagram of our NXT-G programming hierarchy:  </li>
+<br/>
+<center>
+<br/>
+<img src="Pictures%20for%20Website%20Alex%20Mark/ProgramHierarchy.jpg" align="center" width="60%">
+</center>
+<br/>
+<li class="listtraits"> Our MyBlocks and variables are given descriptive and meaningful names to allow us to easily understand what our programs are doing </li>
+<li class="listtraits"> We annotate our work to help us debug programs and to better understand each programming block's purpose</li>
+<br/>
+<br/>
+<center>
+<img src="Pictures%20for%20Website%20Alex%20Mark/Program.jpg" align="center" width="60%">
+</center>
+<br/>
+
+<li class="listtraits"> We program our robot to drive along walls and square to mission models, walls, and lines to maximize repeatability and minimize the likelihood that our team will incur a touch penalty</li>
+<li class="listtraits"> We program the robot to use 2 light sensors for navigational flexibility and rotation sensors to measure distance</li>
+<li class="listtraits"> We make frequent use of our square up subroutine which allows the robot to position itself perpendicularly to any black line (from virtually any angle of attack)</li>
+<li class="listtraits">We designed our own error-corrected move block subroutine for straighter and more accurate movement.  It constantly compares the distances travelled by each motor and adjusts each's speed accordingly to maintain the same ratio between the distance travelled by each motor.  The subroutine can be used for accurate arc turns.</li>
+<li class="listtraits">When accelerating from a stationary position, our robot uses a Ctrl-Z-designed ramp up feature to minimize the likelihood of wheel slip.  This provides for greater repeatability of the robot's movements</li>
+<li class="listtraits">We designed our own PID (Proportional, Integral, Derivative) subroutine that allows for smoother and faster line following than the standard 2-stage line following.  It calculates the difference between the current light sensor reading and the optimal reading (half black and half white)</li>
+<li class="listtraits">When we measure light readings, we use raw values instead of calibrated values.  Using raw values has two distinct advantages: a) it has double the granularity (calibrated values have a range of 0 to 100 while raw values have a range of about 450 to 650), and b) it allows the robot to calibrate for each light sensor (this is important because light sensors do not necessarily return the same values for a given light intensity) </li>  
+<li class="listtraits">When we first programmed the mission that performs tasks on the East side of the playing field, we tried "dead reckoning", or navigating without landmarks, to the Northeast corner due to a lack of distinguishable reference points.  However, after testing the program multiple times, we found that it was unrepeatable.  We then designed a program that determines the position of one of the robot's light sensors on the blue "F" of the FLL logo located in the centre of the mat by measuring the distance travelled from base to the blue "F".  Based on the robot's position on the "F", the program decides how much the robot should pivot so that it arrives consistently at the Northeast corner of the playing field.</li>
+
+</ul> 
+
+<br/>
+<br/>
+
+<div id="return">
+<a href="Programming.html" target="_blank">Return to the Top</a>
+</div>
+</body>
+
+
+<!-- Mirrored from home.ican.net/~686280/Programming.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 May 2019 00:52:08 GMT -->
+</html>
